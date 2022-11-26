@@ -8,8 +8,10 @@ jobs:
     runs on: ubuntu-latest
 
     steps:
-      - name: "Testing git hup actions"
-        run: pwd
+      - name: "before"
+        run: ls
 
-      - name: "Testing printing"
-        run: echo ahmed
+      - uses: action/checkout@v3
+
+      - name: "after"
+        run: ls
