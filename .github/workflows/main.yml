@@ -11,4 +11,4 @@ jobs:
       - uses: action/checkout@v3
 
       - name: "login to ducker hup"
-        run: docker login --username ahmed2200 --passwoed dckr_pat_4YX_jUWWxuAlXAyjCM5D2x35NvU
+        run: docker login --username ${{ secrets.DOCKER_USERNAME }} --passwoed ${{ secrets.DOCKER_TOCKEN }}
