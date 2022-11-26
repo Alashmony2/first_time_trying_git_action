@@ -8,10 +8,7 @@ jobs:
     runs on: ubuntu-latest
 
     steps:
-      - name: "before"
-        run: ls
-
       - uses: action/checkout@v3
 
-      - name: "after"
-        run: ls
+      - name: "login to ducker hup"
+        run: docker login --username ahmed2200 --passwoed dckr_pat_4YX_jUWWxuAlXAyjCM5D2x35NvU
